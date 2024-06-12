@@ -4,7 +4,9 @@
 
 This project is a deep learning framework that utilizes a modified CLIP model for contrastive learning.
 
-![CLIP Model Diagram](method.png)
+<p align="center">
+  <img src="method.png" alt="Description of the image">
+</p>
 
 ## Installation
 
