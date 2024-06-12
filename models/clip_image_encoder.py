@@ -2,8 +2,8 @@
 
 import torch
 import torch.nn as nn
-from models.modified_resnet import ModifiedResNet  # Ensure this is available in your environment
-from models.visual_transformer import VisualTransformer  # Ensure this is available in your environment
+from models.modified_resnet import ModifiedResNet
+from models.visual_transformer import VisualTransformer
 
 class CLIPImageEncoder(nn.Module):
     def __init__(self, embed_dim: int, image_resolution: int, vision_layers: Union[Tuple[int, int, int, int], int], vision_width: int, vision_heads: int, vision_patch_size: int):

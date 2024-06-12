@@ -12,6 +12,6 @@ class FusionTransformer(nn.Module):
     def forward(self, input1, input2):
         input_tensor = torch.cat((input1, input2), dim=1).unsqueeze(1)  # Add sequence dimension
         x = self.transformer_encoder(input_tensor)
-        x = x.squeeze(1)  # Remove sequence dimension
+        x = x.squeeze(1)
         output = self.fc(x)
         return output

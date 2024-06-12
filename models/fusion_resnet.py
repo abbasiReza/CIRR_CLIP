@@ -17,6 +17,6 @@ class FusionResNet(nn.Module):
         x = self.dropout(x)
         x = self.relu(self.fc2(x))
         x = self.dropout(x)
-        x += input1  # Residual connection
+        x += input1
         output = self.fc3(x)
         return output
